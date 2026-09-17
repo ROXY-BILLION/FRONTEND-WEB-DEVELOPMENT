@@ -1,0 +1,383 @@
+/*  GENERAL / RESET */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #050816;
+    color: #f8fafc;
+
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+
+/*  HEADER */
+
+header {
+    background-color: #0d1328;
+
+    width: 100%;
+    padding: 20px 8%;
+
+    border-bottom: 1px solid #252d48;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    color: #8b5cf6;
+    font-size: 24px;
+}
+
+
+/*  NAVIGATION */
+
+nav {
+    display: flex;
+    gap: 25px;
+}
+
+nav a {
+    color: #f8fafc;
+
+    text-decoration: none;
+
+    font-size: 15px;
+}
+
+nav a:hover {
+    color: #8b5cf6;
+}
+
+
+/*  HERO SECTION */
+
+.hero {
+    min-height: 600px;
+
+    padding: 80px 8%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    gap: 50px;
+}
+
+.hero-content {
+    max-width: 600px;
+}
+
+.greeting {
+    color: #8b5cf6;
+
+    font-size: 18px;
+    font-weight: bold;
+
+    margin-bottom: 10px;
+}
+
+.hero h2 {
+    font-size: 56px;
+
+    margin-bottom: 5px;
+}
+
+.hero h3 {
+    color: #3b82f6;
+
+    font-size: 28px;
+
+    margin-bottom: 20px;
+}
+
+.hero-content > p:not(.greeting) {
+    color: #b8c1d9;
+
+    max-width: 550px;
+
+    margin-bottom: 30px;
+}
+
+
+/*  PROFILE IMAGE */
+
+.profile-container {
+    position: relative;
+}
+
+.profile-image {
+    width: 280px;
+    height: 280px;
+
+    object-fit: cover;
+
+    border-radius: 50%;
+
+    border: 5px solid #8b5cf6;
+
+    display: block;
+}
+
+
+/*  BUTTON */
+
+.btn {
+    display: inline-block;
+
+    background-color: #8b5cf6;
+    color: #ffffff;
+
+    padding: 12px 24px;
+
+    border-radius: 8px;
+
+    text-decoration: none;
+
+    font-weight: bold;
+}
+
+.btn:hover {
+    background-color: #3b82f6;
+}
+
+
+/*  GENERAL SECTIONS */
+
+.section {
+    padding: 80px 8%;
+
+    border-top: 1px solid #1c2540;
+}
+
+.section > h2 {
+    color: #8b5cf6;
+
+    font-size: 32px;
+
+    margin-bottom: 25px;
+}
+
+.section > p {
+    max-width: 750px;
+
+    color: #b8c1d9;
+
+    margin-bottom: 15px;
+}
+
+
+/*  SKILLS */
+
+.skills-container {
+    display: flex;
+
+    gap: 20px;
+
+    flex-wrap: wrap;
+
+    margin-top: 30px;
+}
+
+.skill-card {
+    background-color: #0d1328;
+
+    width: 220px;
+
+    padding: 25px;
+
+    border: 1px solid #252d48;
+
+    border-radius: 12px;
+}
+
+.skill-card h3 {
+    color: #3b82f6;
+
+    margin-bottom: 10px;
+}
+
+.skill-card p {
+    color: #b8c1d9;
+}
+
+
+/*  PROJECTS */
+
+.projects-container {
+    display: flex;
+
+    gap: 25px;
+
+    flex-wrap: wrap;
+
+    margin-top: 30px;
+}
+
+.project-card {
+    background-color: #0d1328;
+
+    width: 300px;
+
+    padding: 25px;
+
+    border: 1px solid #252d48;
+
+    border-radius: 12px;
+}
+
+.project-card h3 {
+    color: #f8fafc;
+
+    margin-bottom: 12px;
+}
+
+.project-card p {
+    color: #b8c1d9;
+
+    margin-bottom: 20px;
+}
+
+.project-card a {
+    color: #8b5cf6;
+
+    text-decoration: none;
+
+    font-weight: bold;
+}
+
+
+/*  CONTACT FORM */
+
+form {
+    background-color: #0d1328;
+
+    max-width: 600px;
+
+    padding: 30px;
+
+    margin-top: 30px;
+
+    border: 1px solid #252d48;
+
+    border-radius: 12px;
+}
+
+form label {
+    display: block;
+
+    margin-bottom: 8px;
+
+    font-weight: bold;
+}
+
+form input,
+form textarea {
+    width: 100%;
+
+    padding: 12px;
+
+    margin-bottom: 20px;
+
+    background-color: #050816;
+
+    color: #f8fafc;
+
+    border: 1px solid #303a5c;
+
+    border-radius: 6px;
+
+    font-size: 15px;
+}
+
+form textarea {
+    resize: vertical;
+}
+
+form button {
+    background-color: #8b5cf6;
+
+    color: #ffffff;
+
+    padding: 12px 25px;
+
+    border: none;
+
+    border-radius: 7px;
+
+    cursor: pointer;
+
+    font-size: 15px;
+}
+
+form button:hover {
+    background-color: #3b82f6;
+}
+
+
+/*  FOOTER */
+
+footer {
+    background-color: #0d1328;
+
+    text-align: center;
+
+    padding: 25px;
+
+    border-top: 1px solid #252d48;
+}
+
+footer p {
+    color: #b8c1d9;
+}
+
+
+/*  RESPONSIVE DESIGN */
+
+@media (max-width: 768px) {
+
+    header {
+        flex-direction: column;
+
+        gap: 20px;
+    }
+
+    nav {
+        flex-wrap: wrap;
+
+        justify-content: center;
+    }
+
+    .hero {
+        flex-direction: column-reverse;
+
+        text-align: center;
+
+        padding-top: 60px;
+    }
+
+    .hero h2 {
+        font-size: 42px;
+    }
+
+    .profile-image {
+        width: 220px;
+        height: 220px;
+    }
+
+    .skills-container,
+    .projects-container {
+        justify-content: center;
+    }
+
+    .skill-card,
+    .project-card {
+        width: 100%;
+        max-width: 400px;
+    }
+}
