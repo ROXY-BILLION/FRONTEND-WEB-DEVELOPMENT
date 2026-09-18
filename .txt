@@ -1,0 +1,263 @@
+10 Independent Web Development Projects
+
+These are designed to make you combine everything from Modules 1–10 without following tutorials.
+
+The projects increase gradually in difficulty.
+
+1. Personal Portfolio Platform
+
+Level: 🟢
+
+Build a multi-page developer portfolio.
+
+Include:
+
+Home
+About
+Skills
+Projects
+Contact
+Responsive navigation
+Contact-form validation
+Dynamic project cards from an array
+
+Focus: HTML + CSS + responsive design + DOM.
+
+2. Business Service Website
+
+Level: 🟢
+
+Build a website for a fictional business.
+
+Include:
+
+Hero
+Services
+About
+Testimonials
+Pricing
+Contact
+Mobile menu
+Dynamic service cards
+Form validation
+
+Focus: layout + reusable UI + JavaScript interactions.
+
+3. Product Catalogue
+
+Level: 🟡
+
+Build a frontend product catalogue.
+
+Include:
+
+Product cards
+Categories
+Search
+Filtering
+Product details
+Responsive layout
+Dynamic rendering from an array of objects
+
+Focus: arrays + objects + DOM + filtering.
+
+4. Restaurant Website
+
+Level: 🟡
+
+Build a restaurant website.
+
+Pages/sections:
+
+Home
+Menu
+About
+Contact
+Reservation UI
+
+Features:
+
+Dynamic menu
+Category filtering
+Mobile navigation
+Reservation form
+Validation
+Success message
+
+Focus: forms + dynamic UI + responsive design.
+
+5. Student Management Dashboard
+
+Level: 🟡
+
+Build a frontend student management system.
+
+Student data should include things such as:
+
+Name
+Course
+Score
+Status
+
+Features:
+
+Add student
+Display students
+Search
+Filter
+Delete
+Result/status calculation
+Responsive dashboard
+
+Store the students using LocalStorage.
+
+Focus: data + DOM + functions + storage.
+
+6. Expense Tracker
+
+Level: 🟠
+
+Build a personal expense application.
+
+Features:
+
+Add income
+Add expenses
+Display transactions
+Calculate balance
+Search/filter transactions
+Delete transactions
+LocalStorage
+Responsive interface
+
+Think carefully about:
+
+Income
+Expenses
+Balance
+
+and how those values should be calculated from your data.
+
+Focus: problem solving + data manipulation + persistence.
+
+7. Quiz Application
+
+Level: 🟠
+
+Build an interactive quiz.
+
+Features:
+
+Multiple questions
+Answer selection
+Next question
+Score calculation
+Progress indicator
+Final score
+Restart quiz
+
+Store your questions as an array of objects.
+
+Example structure conceptually:
+
+questions
+ ↓
+question
+ ↓
+options
+ ↓
+correct answer
+
+Focus: state + arrays/objects + DOM + event handling.
+
+8. API Explorer
+
+Level: 🔴
+
+Build a website that consumes a real public API.
+
+Choose one:
+
+Movie Explorer
+Recipe Explorer
+Country Explorer
+User Explorer
+GitHub Explorer
+Pokémon Explorer
+
+Features:
+
+API request
+Loading state
+Error state
+Search
+Dynamic results
+Result cards
+Responsive UI
+
+Focus: API → JavaScript → DOM.
+
+9. Personal Notes / Knowledge Manager
+
+Level: 🔴
+
+Build a browser-based knowledge application.
+
+Features:
+
+Create notes
+Display notes
+Search notes
+Filter notes
+Delete notes
+LocalStorage
+Responsive interface
+Empty-state message
+
+Each note could contain:
+
+Title
+Category
+Content
+Date
+
+Use an array of objects as your main data structure.
+
+Focus: full frontend data flow.
+
+10. 🏆 Mini Business Management System
+
+Level: 🔴🔥
+
+This is your Module 10 final boss.
+
+Create your own small business management application.
+
+For example:
+
+A small shop management system.
+
+Possible data:
+
+Products
+Customers
+Orders
+
+Features are up to you, but your system should demonstrate several concepts you've learned:
+
+Multi-page/interface architecture
+Responsive design
+Navigation
+Forms
+Validation
+Dynamic rendering
+Arrays + objects
+Search
+Filtering
+DOM interactions
+LocalStorage
+UI states
+Calculations
+Reusable functions
+
+You decide the exact business and features.
