@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Recipe Explorer</title>
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    >
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <header class="header">
+        <div class="container navbar">
+
+            <a href="#" class="logo">
+                <i class="fa-solid fa-utensils"></i>
+                Recipe<span>Explorer</span>
+            </a>
+
+            <nav class="nav-links">
+                <a href="#home">Home</a>
+                <a href="#recipes">Recipes</a>
+                <a href="#about">About</a>
+            </nav>
+
+            <a href="#recipes" class="nav-button">
+                Explore
+            </a>
+
+        </div>
+    </header>
+
+    <main>
+
+        <!-- Hero -->
+        <section class="hero" id="home">
+
+            <div class="container hero-content">
+
+                <span class="hero-badge">
+                    <i class="fa-solid fa-fire"></i>
+                    Discover delicious meals
+                </span>
+
+                <h1>
+                    Find your next
+                    <span>favorite recipe.</span>
+                </h1>
+
+                <p>
+                    Search thousands of recipes and discover meals
+                    from different cuisines around the world.
+                </p>
+
+                <!-- Search -->
+                <form class="search-form" id="searchForm">
+
+                    <div class="search-box">
+
+                        <i class="fa-solid fa-magnifying-glass"></i>
+
+                        <input
+                            type="text"
+                            id="searchInput"
+                            placeholder="Search for a recipe..."
+                            autocomplete="off"
+                        >
+
+                    </div>
+
+                    <button type="submit" class="search-button">
+                        Search
+                    </button>
+
+                </form>
+
+            </div>
+
+        </section>
+
+        <!-- Recipes -->
+        <section class="recipes-section" id="recipes">
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <div>
+                        <span class="section-label">
+                            Explore
+                        </span>
+
+                        <h2>
+                            Recipe Results
+                        </h2>
+                    </div>
+
+                    <p id="resultCount"></p>
+
+                </div>
+
+                <!-- Loading -->
+                <div class="state-message" id="loading">
+
+                    <i class="fa-solid fa-spinner fa-spin"></i>
+
+                    <p>Searching for recipes...</p>
+
+                </div>
+
+                <!-- Error -->
+                <div class="state-message error-state" id="error">
+
+                    <i class="fa-solid fa-circle-exclamation"></i>
+
+                    <h3>Something went wrong</h3>
+
+                    <p id="errorText">
+                        Unable to load recipes.
+                    </p>
+
+                </div>
+
+                <!-- No Results -->
+                <div class="state-message" id="noResults">
+
+                    <i class="fa-solid fa-bowl-food"></i>
+
+                    <h3>No recipes found</h3>
+
+                    <p>
+                        Try searching for another meal.
+                    </p>
+
+                </div>
+
+                <!-- Recipe Grid -->
+                <div class="recipe-grid" id="recipeGrid"></div>
+
+            </div>
+
+        </section>
+
+        <!-- About -->
+        <section class="about-section" id="about">
+
+            <div class="container about-container">
+
+                <div class="about-icon">
+                    <i class="fa-solid fa-kitchen-set"></i>
+                </div>
+
+                <div>
+                    <span class="section-label">
+                        About Recipe Explorer
+                    </span>
+
+                    <h2>
+                        Discover meals from around the world.
+                    </h2>
+
+                    <p>
+                        Recipe Explorer uses a public recipe API to
+                        retrieve meal information and present it in
+                        an easy-to-use interface.
+                    </p>
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+
+        <div class="container footer-container">
+
+            <div>
+                <a href="#" class="logo">
+                    <i class="fa-solid fa-utensils"></i>
+                    Recipe<span>Explorer</span>
+                </a>
+
+                <p>
+                    Discover. Cook. Enjoy.
+                </p>
+            </div>
+
+            <div class="footer-links">
+
+                <a href="#home">Home</a>
+                <a href="#recipes">Recipes</a>
+                <a href="#about">About</a>
+
+            </div>
+
+            <div class="social-links">
+
+                <a href="#">
+                    <i class="fa-brands fa-x-twitter"></i>
+                </a>
+
+                <a href="#">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+
+                <a href="#">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <p>
+                &copy; 2026 Recipe Explorer. All rights reserved.
+            </p>
+        </div>
+
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
