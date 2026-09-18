@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Nexa Account</title>
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    >
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <header class="header">
+
+        <div class="container navbar">
+
+            <a href="#" class="logo">
+                <i class="fa-solid fa-bolt"></i>
+                Nexa<span>Account</span>
+            </a>
+
+            <nav class="nav-links">
+                <a href="#home">Home</a>
+                <a href="#register">Register</a>
+                <a href="#account">Account</a>
+            </nav>
+
+            <a href="#register" class="nav-button">
+                Create Account
+            </a>
+
+        </div>
+
+    </header>
+
+    <main>
+
+        <!-- Hero -->
+        <section class="hero" id="home">
+
+            <div class="container hero-container">
+
+                <div class="hero-content">
+
+                    <span class="hero-badge">
+                        <i class="fa-solid fa-user-plus"></i>
+                        Create your account
+                    </span>
+
+                    <h1>
+                        Your digital
+                        <span>workspace starts here.</span>
+                    </h1>
+
+                    <p>
+                        Create a simple account profile and explore
+                        a modern frontend registration experience.
+                    </p>
+
+                    <div class="hero-features">
+
+                        <div>
+                            <i class="fa-solid fa-shield-halved"></i>
+                            <span>Simple & Secure UI</span>
+                        </div>
+
+                        <div>
+                            <i class="fa-solid fa-bolt"></i>
+                            <span>Fast Registration</span>
+                        </div>
+
+                        <div>
+                            <i class="fa-solid fa-mobile-screen"></i>
+                            <span>Mobile Friendly</span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="hero-card">
+
+                    <div class="mini-icon">
+                        <i class="fa-solid fa-user"></i>
+                    </div>
+
+                    <h3>Welcome to Nexa</h3>
+
+                    <p>
+                        Build your profile and manage your
+                        account information.
+                    </p>
+
+                    <a href="#register" class="btn btn-primary">
+                        Get Started
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- Registration -->
+        <section class="register-section" id="register">
+
+            <div class="container register-container">
+
+                <div class="register-info">
+
+                    <span class="section-label">
+                        Registration
+                    </span>
+
+                    <h2>
+                        Create your account
+                    </h2>
+
+                    <p>
+                        Enter your details below to create your
+                        frontend account profile.
+                    </p>
+
+                    <div class="info-list">
+
+                        <div>
+                            <i class="fa-solid fa-circle-check"></i>
+                            <span>Quick and simple registration</span>
+                        </div>
+
+                        <div>
+                            <i class="fa-solid fa-circle-check"></i>
+                            <span>Instant form validation</span>
+                        </div>
+
+                        <div>
+                            <i class="fa-solid fa-circle-check"></i>
+                            <span>Your profile remains in this browser</span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <form class="register-form" id="registerForm">
+
+                    <div class="form-header">
+
+                        <div class="form-icon">
+                            <i class="fa-solid fa-user-plus"></i>
+                        </div>
+
+                        <div>
+                            <h3>Create Account</h3>
+                            <p>Fill in your information</p>
+                        </div>
+
+                    </div>
+
+                    <!-- Full Name -->
+                    <div class="form-group">
+
+                        <label for="fullName">
+                            Full Name
+                        </label>
+
+                        <div class="input-wrapper">
+
+                            <i class="fa-solid fa-user"></i>
+
+                            <input
+                                type="text"
+                                id="fullName"
+                                placeholder="John Doe"
+                            >
+
+                        </div>
+
+                        <small
+                            class="error-message"
+                            id="nameError"
+                        ></small>
+
+                    </div>
+
+                    <!-- Email -->
+                    <div class="form-group">
+
+                        <label for="email">
+                            Email Address
+                        </label>
+
+                        <div class="input-wrapper">
+
+                            <i class="fa-solid fa-envelope"></i>
+
+                            <input
+                                type="email"
+                                id="email"
+                                placeholder="john@example.com"
+                            >
+
+                        </div>
+
+                        <small
+                            class="error-message"
+                            id="emailError"
+                        ></small>
+
+                    </div>
+
+                    <!-- Password -->
+                    <div class="form-group">
+
+                        <label for="password">
+                            Password
+                        </label>
+
+                        <div class="input-wrapper">
+
+                            <i class="fa-solid fa-lock"></i>
+
+                            <input
+                                type="password"
+                                id="password"
+                                placeholder="Minimum 8 characters"
+                            >
+
+                            <button
+                                type="button"
+                                class="password-toggle"
+                                id="passwordToggle"
+                            >
+                                <i class="fa-solid fa-eye"></i>
+                            </button>
+
+                        </div>
+
+                        <small
+                            class="error-message"
+                            id="passwordError"
+                        ></small>
+
+                    </div>
+
+                    <!-- Confirm Password -->
+                    <div class="form-group">
+
+                        <label for="confirmPassword">
+                            Confirm Password
+                        </label>
+
+                        <div class="input-wrapper">
+
+                            <i class="fa-solid fa-lock"></i>
+
+                            <input
+                                type="password"
+                                id="confirmPassword"
+                                placeholder="Repeat your password"
+                            >
+
+                        </div>
+
+                        <small
+                            class="error-message"
+                            id="confirmPasswordError"
+                        ></small>
+
+                    </div>
+
+                    <button
+                        type="submit"
+                        class="btn btn-primary submit-button"
+                    >
+                        Create Account
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </button>
+
+                    <div
+                        class="form-status"
+                        id="formStatus"
+                    ></div>
+
+                </form>
+
+            </div>
+
+        </section>
+
+        <!-- Account Result -->
+        <section
+            class="account-section"
+            id="account"
+        >
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <span class="section-label">
+                        Your Account
+                    </span>
+
+                    <h2>
+                        Profile information
+                    </h2>
+
+                    <p>
+                        Your non-sensitive account information
+                        will appear here after registration.
+                    </p>
+
+                </div>
+
+                <div
+                    class="account-card"
+                    id="accountCard"
+                >
+
+                    <div class="empty-account">
+
+                        <div class="empty-icon">
+                            <i class="fa-solid fa-user"></i>
+                        </div>
+
+                        <h3>
+                            No account profile yet
+                        </h3>
+
+                        <p>
+                            Complete the registration form to
+                            display your profile here.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+
+        <div class="container footer-container">
+
+            <div>
+
+                <a href="#" class="logo">
+                    <i class="fa-solid fa-bolt"></i>
+                    Nexa<span>Account</span>
+                </a>
+
+                <p>
+                    A frontend-only account registration experience.
+                </p>
+
+            </div>
+
+            <div class="footer-links">
+
+                <a href="#home">Home</a>
+                <a href="#register">Register</a>
+                <a href="#account">Account</a>
+
+            </div>
+
+            <div class="social-links">
+
+                <a href="#">
+                    <i class="fa-brands fa-x-twitter"></i>
+                </a>
+
+                <a href="#">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+
+                <a href="#">
+                    <i class="fa-brands fa-linkedin-in"></i>
+                </a>
+
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+
+            <p>
+                &copy; 2026 Nexa Account. Frontend practice project.
+            </p>
+
+        </div>
+
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
