@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects | X-Technologies</title>
+    <link rel="stylesheet" href="style.css">
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    >
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <header class="navbar">
+        <a href="index.html" class="logo">
+            <span>X</span>-Technologies
+        </a>
+
+        <nav class="nav-links" id="navLinks">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="services.html">Services</a>
+            <a href="projects.html" class="active">Projects</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+
+        <button class="menu-btn" id="menuBtn" aria-label="Open navigation">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+    </header>
+
+    <main>
+
+        <!-- Page Hero -->
+        <section class="page-hero">
+            <p class="eyebrow">OUR WORK</p>
+            <h1>Projects Built With Technology.</h1>
+            <p>
+                Explore some of the digital products and experiments
+                created by X-Technologies.
+            </p>
+        </section>
+
+        <!-- Project Filter -->
+        <section class="section">
+
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">
+                    All
+                </button>
+
+                <button class="filter-btn" data-filter="web">
+                    Web
+                </button>
+
+                <button class="filter-btn" data-filter="mobile">
+                    Mobile
+                </button>
+
+                <button class="filter-btn" data-filter="game">
+                    Games
+                </button>
+
+                <button class="filter-btn" data-filter="ai">
+                    AI
+                </button>
+            </div>
+
+            <div class="projects-grid projects-full" id="projectsContainer"></div>
+
+        </section>
+
+        <!-- CTA -->
+        <section class="cta">
+            <div>
+                <p class="eyebrow">YOUR IDEA NEXT?</p>
+                <h2>Let's Build Your Project.</h2>
+                <p>Tell us what you're trying to create.</p>
+            </div>
+
+            <a href="contact.html" class="btn btn-primary">
+                Start A Project
+            </a>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-brand">
+            <a href="index.html" class="logo">
+                <span>X</span>-Technologies
+            </a>
+
+            <p>
+                Building modern software, games and AI systems.
+            </p>
+        </div>
+
+        <div class="footer-links">
+            <h3>Company</h3>
+            <a href="about.html">About</a>
+            <a href="services.html">Services</a>
+            <a href="projects.html">Projects</a>
+            <a href="contact.html">Contact</a>
+        </div>
+
+        <div class="footer-links">
+            <h3>Connect</h3>
+            <a href="#">WhatsApp</a>
+            <a href="#">TikTok</a>
+            <a href="#">X</a>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2026 X-Technologies. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+
+</body>
+</html>

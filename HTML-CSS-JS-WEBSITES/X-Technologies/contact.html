@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | X-Technologies</title>
+    <link rel="stylesheet" href="style.css">
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    >
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <header class="navbar">
+        <a href="index.html" class="logo">
+            <span>X</span>-Technologies
+        </a>
+
+        <nav class="nav-links" id="navLinks">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="services.html">Services</a>
+            <a href="projects.html">Projects</a>
+            <a href="contact.html" class="active">Contact</a>
+        </nav>
+
+        <button class="menu-btn" id="menuBtn" aria-label="Open navigation">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+    </header>
+
+    <main>
+
+        <!-- Page Hero -->
+        <section class="page-hero">
+            <p class="eyebrow">CONTACT US</p>
+            <h1>Let's Talk About Your Project.</h1>
+            <p>
+                Have an idea, question or project?
+                Send us a message.
+            </p>
+        </section>
+
+        <!-- Contact -->
+        <section class="section contact-section">
+
+            <div class="contact-info">
+
+                <p class="eyebrow">GET IN TOUCH</p>
+
+                <h2>Tell Us What You're Building.</h2>
+
+                <p>
+                    Whether you're starting a new project or improving
+                    an existing product, we'd like to hear about it.
+                </p>
+
+                <div class="contact-item">
+                    <i class="fa-solid fa-envelope"></i>
+                    <div>
+                        <h3>Email</h3>
+                        <p>hello@xtechnologies.com</p>
+                    </div>
+                </div>
+
+                <div class="contact-item">
+                    <i class="fa-brands fa-whatsapp"></i>
+                    <div>
+                        <h3>WhatsApp</h3>
+                        <p>Let's chat about your project.</p>
+                    </div>
+                </div>
+
+                <div class="contact-item">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <div>
+                        <h3>Location</h3>
+                        <p>Lagos, Nigeria</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Contact Form -->
+            <form class="contact-form" id="contactForm" novalidate>
+
+                <div class="form-group">
+                    <label for="name">Full Name</label>
+
+                    <input
+                        type="text"
+                        id="name"
+                        name="name"
+                        placeholder="Enter your name"
+                    >
+
+                    <small class="error-message" id="nameError"></small>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        placeholder="Enter your email"
+                    >
+
+                    <small class="error-message" id="emailError"></small>
+                </div>
+
+                <div class="form-group">
+                    <label for="subject">Subject</label>
+
+                    <input
+                        type="text"
+                        id="subject"
+                        name="subject"
+                        placeholder="What is your project about?"
+                    >
+
+                    <small class="error-message" id="subjectError"></small>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Message</label>
+
+                    <textarea
+                        id="message"
+                        name="message"
+                        rows="7"
+                        placeholder="Tell us about your project..."
+                    ></textarea>
+
+                    <small class="error-message" id="messageError"></small>
+                </div>
+
+                <button type="submit" class="btn btn-primary form-submit">
+                    Send Message
+                    <i class="fa-solid fa-paper-plane"></i>
+                </button>
+
+                <div id="formMessage" class="form-message"></div>
+
+            </form>
+
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-brand">
+            <a href="index.html" class="logo">
+                <span>X</span>-Technologies
+            </a>
+
+            <p>
+                Building modern software, games and AI systems.
+            </p>
+        </div>
+
+        <div class="footer-links">
+            <h3>Company</h3>
+            <a href="about.html">About</a>
+            <a href="services.html">Services</a>
+            <a href="projects.html">Projects</a>
+            <a href="contact.html">Contact</a>
+        </div>
+
+        <div class="footer-links">
+            <h3>Connect</h3>
+            <a href="#">WhatsApp</a>
+            <a href="#">TikTok</a>
+            <a href="#">X</a>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2026 X-Technologies. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+
+</body>
+</html>
